@@ -1,0 +1,43 @@
+body {
+  background-color: #d5dec4;
+  margin: 0;
+
+  img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .content {
+    text-align: center;
+
+    h1 {
+      color: #446794;
+      display: inline-block;
+      font-family: 'Indie Flower', cursive;
+      padding: 0 20px;
+      position: relative;
+      text-transform: uppercase;
+
+      &:before,
+      &:after {
+        content: '-';
+        position: absolute;
+      }
+
+      &:before {
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+      }
+    }
+
+    > .vue-star-rating {
+      justify-content: center;
+      padding: 20px 0;
+    }
+  }
+}
